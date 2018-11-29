@@ -1,0 +1,142 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab|Ubuntu';
+
+html{
+    background-color: #cccccc;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.page{
+    display: none;
+}
+.active{
+    display: block;
+}
+p{
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    color: white;
+}
+h1, h2, h3, h4{
+    font-family: 'Roboto Slab', Rockwell, "Times New Roman", serif;
+    color: #081c24;
+}
+h2{
+    margin-left: 19.5rem;
+}
+#search-button{
+    float: right;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+#filter-button{
+    float: right;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+#back-button{
+    float: right;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+.iconic-property-stroke,
+.iconic-property-fill {
+    fill: #346;
+    stroke: #346;
+}
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+header{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 5rem;
+}
+h1{
+    text-align: center;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+}
+#search-input{
+    align-self: center;
+    width: 500px;
+    height: 40px; 
+    border-radius: 2px;
+    box-shadow: 1px 3px 10px;
+    padding-left: 5px;
+    border-style: solid;
+    border-color: dimgray;
+}
+.attribution{
+    height: auto;
+    width: 150px;
+    margin: auto;
+}
+.searchButtonDiv{
+    align-self: flex-end;
+    width: 50px;
+}
+.backButtonDiv{
+    display: inline-block;
+    width: 110px;
+    float: left;
+    flex-wrap: wrap;
+}
+.filterButtonDiv{
+    align-self: flex-end;
+    width: 50px;
+}
+
+/*Add this class to the recommend and search results content sections in HTML*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movieCard {
+    width: 50rem;
+    height: auto;
+    margin: 1rem auto;
+    background-color: dimgray;
+    color: white;
+    animation: fadeIn 1s;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.movieCard:hover{
+    box-shadow: 5px 5px 8px black;
+    width: 60rem;
+}
+
+.imageSection {
+    float: left;
+    width: 12rem;
+    height: 17rem;
+    margin-right: 1rem;
+    overflow: hidden;
+}
+
+/*select only the images that are direct descendants of .imageSection*/
+.imageSection > img {
+    height: 17rem;
+    margin-right: 1rem;
+}
+
