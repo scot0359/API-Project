@@ -6,30 +6,43 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body>
     <main>
-        <header >
-            <img id="back-button" alt="Back Button" title="Back"/>
-            <img id="search-button" alt="Search" title="Search"/>
+       <h1>Movie Recommendations</h1>
+        <header>
+
+            <div class="backButtonDiv">
+                <img id="back-button" alt="Back Button" title="Back" data-src="img/arrow-thick-left-fill-large-lg.svg" class="iconic iconic-md"/>
+            </div>
+
             <input type="text" id="search-input" placeholder="search" />
+            
+            <div class="searchButtonDiv">
+                <img id="search-button" alt="Search" title="Search" data-src="img/magnifying-glass.svg" class="iconic iconic-md" />
+            </div>
+
+            <div class="filterButtonDiv">
+                <img id="filter-button" alt="Filter" title="Filter" data-src="img/flow.svg" class="iconic inconic-md" />
+            </div>
         </header>
-        
-        <div class="page" id="search-results">
+
+        <div class="page active" id="search-results">
             <section class="title"></section>
-            <section class="content"></section>
+            <section class="content flex-container"></section>
         </div>
-        
+
         <div class="page" id="recommend-results">
             <section class="title"></section>
-            <section class="content"></section>
+            <section class="content flex-container"></section>
         </div>
     </main>
- 
-    
+
+
     <div class="attribution">
-       
+        <img id="attribution-logo" alt="attribution-logo" title="attribution-logo" data-src="img/attribution.svg" class="iconic inconic-md"/>
     </div>
-    
+
     <script src="js/iconic.min.js"></script>
     <script src="js/key.js"></script>
     <script src="js/main.js"></script>
